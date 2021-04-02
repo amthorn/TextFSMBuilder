@@ -1,0 +1,13 @@
+.react-flow__node {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.react-flow__node-default, .react-flow__node-input, .react-flow__node-output {
+    width: 160px;
+    height: 40px;
+}
+.react-flow__background {
+    top: -10px;
+    left: -10px;
+}

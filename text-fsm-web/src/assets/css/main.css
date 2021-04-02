@@ -1,0 +1,13 @@
+.container {
+  max-width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+aside {
+  border: 1px solid;
+}
+
+/*# sourceMappingURL=main.css.map */

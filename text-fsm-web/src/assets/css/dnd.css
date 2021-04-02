@@ -1,0 +1,43 @@
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+.dndflow aside {
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+.dndflow .dndnode {
+  height: 30px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  text-transform: uppercase;
+  font-family: "Courier";
+  font-weight: bold;
+}
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+  .dndflow aside {
+    width: 20%;
+    max-width: 250px;
+  }
+}
+
+/*# sourceMappingURL=dnd.css.map */
