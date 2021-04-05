@@ -1,0 +1,72 @@
+///***********/
+//* BORDERS *//
+/***********///
+
+// border width
+@for $i from 1 through 10 {
+	.border-#{$i} {
+		border-width: $i + px;
+	}
+}
+
+// border style
+$border-styles: (
+	solid, 
+	dotted, 
+	dashed, 
+	double, 
+	ridge, 
+	inset, 
+	outset, 
+	none, 
+	hidden
+);
+@each $style in $border-styles {
+  .bs-#{$style} {
+    border-style: $style;
+  }
+}
+
+///*****************/
+//* FONT AND TEXT *//
+/*****************///
+
+// text transform
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+// font weight
+.fw-bold {
+	font-weight: bold;
+}
+
+///**********/
+//* SIZING *//
+/**********///
+// height and width
+@for $i from 1 through 20 {
+	.w-#{$i * 5} {
+		width: $i * 5%;
+	}
+	.h-#{$i * 5} {
+		height: $i * 5%;
+	}
+}
+
+.w-auto {
+	width: auto;
+}
+
+.h-auto {
+	height: auto;
+}
+
+// stroke width
+@for $i from 1 through 5 {
+	@for $j from 0 through 1 {
+		.sw-#{$i}-#{$j * 5} {
+			stroke-width: $i + $j * 0.5;
+		}
+	}
+}

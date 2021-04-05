@@ -1,0 +1,80 @@
+// arrows
+$direction-left: "left";
+$direction-up: "up";
+$direction-right: "right";
+$direction-down: "down";
+
+$arrows: (
+	$direction-left: (
+		"content": "→",
+		"pseudo-content": (
+			after: (
+				display: inline-block,
+				transform: rotate(180deg),
+				left: -1px,
+				top: -3px
+			)
+		)
+	),
+	$direction-up: (
+		"content": "→",
+		"pseudo-content": (
+			after: (
+				display: inline-block,
+				transform: rotate(270deg),
+				left: -2px,
+				top: -4px
+			)
+		)
+	),
+	$direction-right: (
+		"content": "→",
+		"pseudo-content": (
+			after: (
+				display: inline-block,
+				transform: rotate(0deg),
+				left: 0px,
+				top: -6px
+			)
+		)
+	),
+	$direction-down: (
+		"content": "→",
+		"pseudo-content": (
+			after: (
+				display: inline-block,
+				transform: rotate(90deg),
+				left: 1px,
+				top: -4px
+			)
+		)
+	)
+);
+
+// handles
+$handle-position-top: 'top';
+$handle-position-bottom: 'bottom';
+$handle-position-left: 'left';
+$handle-position-right: 'right';
+
+$handle-type-source: 'source';
+$handle-type-target: 'target';
+
+$handles: (
+	$handle-position-top: (
+		$handle-type-source: $direction-up,
+		$handle-type-target: $direction-down
+	),
+	$handle-position-bottom: (
+		$handle-type-source: $direction-down,
+		$handle-type-target: $direction-up
+	),
+	$handle-position-left: (
+		$handle-type-source: $direction-left,
+		$handle-type-target: $direction-right
+	),
+	$handle-position-right: (
+		$handle-type-source: $direction-right,
+		$handle-type-target: $direction-left
+	)
+);

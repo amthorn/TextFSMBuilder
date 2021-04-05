@@ -1,9 +1,105 @@
-.container {
-	max-width: 100%;
+@import "imports";
+
+.ace_info {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  width: 7px !important;
+  height: 7px !important;
+  display: inline-block;
+  padding: 0 !important;
+  margin-top: 4px !important;
+  left: -14px;
+  position: relative;
+
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+  // Remove number and i image
+  color: transparent;
+  background-image: none !important;
+  background-color: transparent !important
+}
+
+#main_container {
+	max-width: 90%;
 }
 textarea {
 	resize: none;
 }
 aside {
 	border: 1px solid;
+}
+
+.ace_line_marker {
+  position:absolute;
+  background:rgba(100,200,100,0.5);
+  z-index:20
+}
+
+div[x-placement="bottom left"] {
+	top: 0px;
+    left: -8% !important;
+}
+
+.arrow {
+	left: 5% !important;
+}
+
+.popover-header {
+	border-bottom: none;
+	border-radius: calc(0.3rem - 1px)
+}
+
+.popover {
+	max-width: 100%;
+}
+
+.popover-close-button {
+	padding: 0;
+	margin-left: 20px;
+	color: black;
+}
+
+.bs-popover-auto[x-placement^="bottom"] {
+	& .arrow::before, .arrow::after {
+		border-bottom-color: #dc3545;
+	}
+	& .popover-header::before {
+		border-bottom: none;
+	}
+}
+
+.dndflow {
+	& .startDnDNode:not(.disabled) {
+		background-color: #ffc107;
+		&:hover {
+			background-color: #ffd218;
+		}
+		&:active:hover {
+			cursor: grabbing;
+		}
+	}
+	& .stateDnDNode:not(.disabled) {
+		background-color: #28a745;
+		&:hover {
+			background-color: #39b856;
+		}
+		&:active:hover {
+			cursor: grabbing;
+		}
+	}
+	& .dndnode.disabled {
+		background-color: gray;
+		color: #555 !important;
+		&:hover {
+			cursor: not-allowed;
+		}
+	}
+}
+
+.accordion-drop-link {
+	@extend .p-0;
+	@extend .mb-1;
+	color: black;
+	height: 18px;
 }

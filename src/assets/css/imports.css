@@ -5199,15 +5199,13 @@ button.bg-secondary:focus {
   background-color: #545b62 !important;
 }
 
-.bg-success, .react-flow__node.react-flow__node-state {
+.bg-success {
   background-color: #28a745 !important;
 }
 
-a.bg-success:hover, a.react-flow__node.react-flow__node-state:hover, a.bg-success:focus, a.react-flow__node.react-flow__node-state:focus,
+a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
-button.react-flow__node.react-flow__node-state:hover,
-button.bg-success:focus,
-button.react-flow__node.react-flow__node-state:focus {
+button.bg-success:focus {
   background-color: #1e7e34 !important;
 }
 
@@ -5221,41 +5219,23 @@ button.bg-info:focus {
   background-color: #117a8b !important;
 }
 
-.bg-warning, .react-flow__handle.connectable.source[data-handlepos=right], .react-flow__handle.connectable.source[data-handlepos=left], .react-flow__handle.connectable.source[data-handlepos=bottom], .react-flow__handle.connectable.source[data-handlepos=top], .react-flow__node.react-flow__node-start {
+.bg-warning {
   background-color: #ffc107 !important;
 }
 
-a.bg-warning:hover, a.react-flow__handle.connectable.source[data-handlepos=right]:hover, a.react-flow__handle.connectable.source[data-handlepos=left]:hover, a.react-flow__handle.connectable.source[data-handlepos=bottom]:hover, a.react-flow__handle.connectable.source[data-handlepos=top]:hover, a.react-flow__node.react-flow__node-start:hover, a.bg-warning:focus, a.react-flow__handle.connectable.source[data-handlepos=right]:focus, a.react-flow__handle.connectable.source[data-handlepos=left]:focus, a.react-flow__handle.connectable.source[data-handlepos=bottom]:focus, a.react-flow__handle.connectable.source[data-handlepos=top]:focus, a.react-flow__node.react-flow__node-start:focus,
+a.bg-warning:hover, a.bg-warning:focus,
 button.bg-warning:hover,
-button.react-flow__handle.connectable.source[data-handlepos=right]:hover,
-button.react-flow__handle.connectable.source[data-handlepos=left]:hover,
-button.react-flow__handle.connectable.source[data-handlepos=bottom]:hover,
-button.react-flow__handle.connectable.source[data-handlepos=top]:hover,
-button.react-flow__node.react-flow__node-start:hover,
-button.bg-warning:focus,
-button.react-flow__handle.connectable.source[data-handlepos=right]:focus,
-button.react-flow__handle.connectable.source[data-handlepos=left]:focus,
-button.react-flow__handle.connectable.source[data-handlepos=bottom]:focus,
-button.react-flow__handle.connectable.source[data-handlepos=top]:focus,
-button.react-flow__node.react-flow__node-start:focus {
+button.bg-warning:focus {
   background-color: #d39e00 !important;
 }
 
-.bg-danger, .react-flow__handle.connectable.target[data-handlepos=right], .react-flow__handle.connectable.target[data-handlepos=left], .react-flow__handle.connectable.target[data-handlepos=bottom], .react-flow__handle.connectable.target[data-handlepos=top] {
+.bg-danger {
   background-color: #dc3545 !important;
 }
 
-a.bg-danger:hover, a.react-flow__handle.connectable.target[data-handlepos=right]:hover, a.react-flow__handle.connectable.target[data-handlepos=left]:hover, a.react-flow__handle.connectable.target[data-handlepos=bottom]:hover, a.react-flow__handle.connectable.target[data-handlepos=top]:hover, a.bg-danger:focus, a.react-flow__handle.connectable.target[data-handlepos=right]:focus, a.react-flow__handle.connectable.target[data-handlepos=left]:focus, a.react-flow__handle.connectable.target[data-handlepos=bottom]:focus, a.react-flow__handle.connectable.target[data-handlepos=top]:focus,
+a.bg-danger:hover, a.bg-danger:focus,
 button.bg-danger:hover,
-button.react-flow__handle.connectable.target[data-handlepos=right]:hover,
-button.react-flow__handle.connectable.target[data-handlepos=left]:hover,
-button.react-flow__handle.connectable.target[data-handlepos=bottom]:hover,
-button.react-flow__handle.connectable.target[data-handlepos=top]:hover,
-button.bg-danger:focus,
-button.react-flow__handle.connectable.target[data-handlepos=right]:focus,
-button.react-flow__handle.connectable.target[data-handlepos=left]:focus,
-button.react-flow__handle.connectable.target[data-handlepos=bottom]:focus,
-button.react-flow__handle.connectable.target[data-handlepos=top]:focus {
+button.bg-danger:focus {
   background-color: #bd2130 !important;
 }
 
@@ -5355,7 +5335,7 @@ button.bg-dark:focus {
   border-color: #f8f9fa !important;
 }
 
-.border-dark, .react-flow__node {
+.border-dark {
   border-color: #343a40 !important;
 }
 
@@ -5363,7 +5343,7 @@ button.bg-dark:focus {
   border-color: #fff !important;
 }
 
-.rounded, .react-flow__node {
+.rounded {
   border-radius: 0.25rem !important;
 }
 
@@ -6609,7 +6589,7 @@ button.bg-dark:focus {
   padding-left: 0.25rem !important;
 }
 
-.p-2, .react-flow__node {
+.p-2 {
   padding: 0.5rem !important;
 }
 
@@ -8003,7 +7983,7 @@ button.bg-dark:focus {
   text-align: right !important;
 }
 
-.text-center, .react-flow__node {
+.text-center {
   text-align: center !important;
 }
 
@@ -8063,7 +8043,7 @@ button.bg-dark:focus {
   text-transform: lowercase !important;
 }
 
-.text-uppercase, .react-flow__node {
+.text-uppercase {
   text-transform: uppercase !important;
 }
 
@@ -8255,7 +8235,7 @@ h3 {
   }
 }
 /***********/
-.border-1, div.react-flow__node--active, .react-flow__node {
+.border-1 {
   border-width: 1px;
 }
 
@@ -8295,7 +8275,7 @@ h3 {
   border-width: 10px;
 }
 
-.bs-solid, .react-flow__node {
+.bs-solid {
   border-style: solid;
 }
 
@@ -8303,7 +8283,7 @@ h3 {
   border-style: dotted;
 }
 
-.bs-dashed, div.react-flow__node--active {
+.bs-dashed {
   border-style: dashed;
 }
 
@@ -8332,11 +8312,11 @@ h3 {
 }
 
 /*****************/
-.text-uppercase, .react-flow__node {
+.text-uppercase {
   text-transform: uppercase;
 }
 
-.fw-bold, .react-flow__node {
+.fw-bold {
   font-weight: bold;
 }
 
@@ -8381,7 +8361,7 @@ h3 {
   height: 25%;
 }
 
-.w-30, .react-flow__node {
+.w-30 {
   width: 30%;
 }
 
@@ -8505,7 +8485,7 @@ h3 {
   width: auto;
 }
 
-.h-auto, .react-flow__node {
+.h-auto {
   height: auto;
 }
 
@@ -8513,7 +8493,7 @@ h3 {
   stroke-width: 1;
 }
 
-.sw-1-5, .react-flow__edge-path {
+.sw-1-5 {
   stroke-width: 1.5;
 }
 
@@ -8549,150 +8529,4 @@ h3 {
   stroke-width: 5.5;
 }
 
-.react-flow__node {
-  font-family: monospace;
-}
-.react-flow__background {
-  top: 1.25%;
-  left: 1.75%;
-}
-
-.active-rule::after {
-  content: "→";
-  position: relative;
-  display: inline-block;
-  transform: rotate(0deg);
-  left: 0px;
-  top: -6px;
-}
-.active-rule::after {
-  left: -20px;
-  top: 0px;
-}
-
-.react-flow__node.selected {
-  box-shadow: 2px 2px 8px gray;
-}
-
-.blink-border, div.react-flow__node--active {
-  animation: blink-border-kf 1s ease-in-out infinite;
-}
-
-.blink-bg, rect.react-flow__node--active {
-  animation: blink-fill-kf 1s ease-in-out infinite;
-}
-
-.blink-content, .active-rule::after {
-  animation: blink-content-kf 1s ease-in-out infinite;
-}
-
-@keyframes blink-border-kf {
-  50% {
-    border-color: rgba(255, 255, 255, 0);
-  }
-}
-@keyframes blink-fill-kf {
-  50% {
-    fill: rgba(220, 53, 69, 0.4);
-  }
-}
-@keyframes blink-content-kf {
-  50% {
-    color: rgba(0, 0, 0, 0.3);
-  }
-}
-.react-flow__handle.connectable {
-  /* sizes must be absolute because parent container changes height */
-  width: 13px;
-  height: 12px;
-}
-.react-flow__handle.connectable.source[data-handlepos=top]::after {
-  content: "→";
-  position: relative;
-  display: inline-block;
-  transform: rotate(270deg);
-  left: -2px;
-  top: -4px;
-}
-.react-flow__handle.connectable.target[data-handlepos=top]::after {
-  content: "→";
-  position: relative;
-  display: inline-block;
-  transform: rotate(90deg);
-  left: 1px;
-  top: -4px;
-}
-.react-flow__handle.connectable.source[data-handlepos=bottom]::after {
-  content: "→";
-  position: relative;
-  display: inline-block;
-  transform: rotate(90deg);
-  left: 1px;
-  top: -4px;
-}
-.react-flow__handle.connectable.target[data-handlepos=bottom]::after {
-  content: "→";
-  position: relative;
-  display: inline-block;
-  transform: rotate(270deg);
-  left: -2px;
-  top: -4px;
-}
-.react-flow__handle.connectable.source[data-handlepos=left]::after {
-  content: "→";
-  position: relative;
-  display: inline-block;
-  transform: rotate(180deg);
-  left: -1px;
-  top: -3px;
-}
-.react-flow__handle.connectable.target[data-handlepos=left]::after {
-  content: "→";
-  position: relative;
-  display: inline-block;
-  transform: rotate(0deg);
-  left: 0px;
-  top: -6px;
-}
-.react-flow__handle.connectable.source[data-handlepos=right]::after {
-  content: "→";
-  position: relative;
-  display: inline-block;
-  transform: rotate(0deg);
-  left: 0px;
-  top: -6px;
-}
-.react-flow__handle.connectable.target[data-handlepos=right]::after {
-  content: "→";
-  position: relative;
-  display: inline-block;
-  transform: rotate(180deg);
-  left: -1px;
-  top: -3px;
-}
-
-.react-flow__handle-top {
-  left: 50%;
-  top: -7px;
-}
-
-.react-flow__handle-bottom {
-  left: 50%;
-  bottom: -7px;
-}
-
-.react-flow__handle-left {
-  left: -7px;
-  top: 50%;
-}
-
-.react-flow__handle-right {
-  right: -7px;
-  top: 50%;
-}
-
-.react-flow__node-accordion {
-  text-transform: none;
-}
-
-/*# sourceMappingURL=react-flow.css.map */
+/*# sourceMappingURL=imports.css.map */

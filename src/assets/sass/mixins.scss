@@ -1,0 +1,20 @@
+@mixin font-monospace {
+    font-family: monospace;
+    @extend .text-uppercase;
+    @extend .fw-bold;
+}
+
+$pseudo-content: ('before', 'after');
+
+@mixin arrow($direction) {
+    $_arrow: map.get($arrows, $direction);
+    @each $pseudo-content, $props in map.get($_arrow, 'pseudo-content') {
+        &::#{$pseudo-content} {
+            content: map.get($_arrow, 'content');
+            position: relative;
+            @each $name, $value in $props {
+                #{$name}: $value;
+            }
+        }
+    }
+}

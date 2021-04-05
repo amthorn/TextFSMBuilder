@@ -1,0 +1,296 @@
+/***********/
+.border-1 {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-3 {
+  border-width: 3px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-5 {
+  border-width: 5px;
+}
+
+.border-6 {
+  border-width: 6px;
+}
+
+.border-7 {
+  border-width: 7px;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
+.border-9 {
+  border-width: 9px;
+}
+
+.border-10 {
+  border-width: 10px;
+}
+
+.bs-solid {
+  border-style: solid;
+}
+
+.bs-dotted {
+  border-style: dotted;
+}
+
+.bs-dashed {
+  border-style: dashed;
+}
+
+.bs-double {
+  border-style: double;
+}
+
+.bs-ridge {
+  border-style: ridge;
+}
+
+.bs-inset {
+  border-style: inset;
+}
+
+.bs-outset {
+  border-style: outset;
+}
+
+.bs-none {
+  border-style: none;
+}
+
+.bs-hidden {
+  border-style: hidden;
+}
+
+/*****************/
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+/**********/
+.w-5 {
+  width: 5%;
+}
+
+.h-5 {
+  height: 5%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.h-15 {
+  height: 15%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.h-35 {
+  height: 35%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.h-45 {
+  height: 45%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.w-55 {
+  width: 55%;
+}
+
+.h-55 {
+  height: 55%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.h-65 {
+  height: 65%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.h-85 {
+  height: 85%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.h-95 {
+  height: 95%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.sw-1-0 {
+  stroke-width: 1;
+}
+
+.sw-1-5 {
+  stroke-width: 1.5;
+}
+
+.sw-2-0 {
+  stroke-width: 2;
+}
+
+.sw-2-5 {
+  stroke-width: 2.5;
+}
+
+.sw-3-0 {
+  stroke-width: 3;
+}
+
+.sw-3-5 {
+  stroke-width: 3.5;
+}
+
+.sw-4-0 {
+  stroke-width: 4;
+}
+
+.sw-4-5 {
+  stroke-width: 4.5;
+}
+
+.sw-5-0 {
+  stroke-width: 5;
+}
+
+.sw-5-5 {
+  stroke-width: 5.5;
+}
+
+/*# sourceMappingURL=classes.css.map */

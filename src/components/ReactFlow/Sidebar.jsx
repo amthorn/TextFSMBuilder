@@ -1,10 +1,10 @@
 import React from 'react';
-import { Nodes } from "./Nodes";
+import { DragAndDropNodeTypes } from "./Nodes/NodeTypes";
 import classNames from "classnames/dedupe";
 
 
 
-export const Sidebar = () => {
+export const Sidebar = ({ startNodeExists }) => {
     const onDragStart = (event, nodeType) => {
         event.dataTransfer.setData('application/reactflow', nodeType);
         event.dataTransfer.effectAllowed = 'move';
@@ -13,20 +13,21 @@ export const Sidebar = () => {
     return (
         <aside>
             <div className="description">
-                You can drag these nodes to the pane on the left.
+                You can drag these nodes into the graph panel.
             </div>
             {
-                Nodes.map(node => (
+                DragAndDropNodeTypes.map(node => (
                     <div 
                         className={ classNames(
                             "dndnode", 
                             node['type'], 
-                            `bg-${node['bg']}`, 
                             `text-${node['color']}`,
-                            node['name'].toLowerCase()
+                            node['name'].toLowerCase() + 'DnDNode',
+                            startNodeExists && node.type === 'start' ? 'disabled' : ''
                         ) }
+                        key={ node['name'] }
                         onDragStart={ (event) => onDragStart(event, node['type']) }
-                        draggable
+                        { ...(startNodeExists && node.type === 'start' ? {} : {draggable: true}) }
                     >
                         { node['name'] } Node
                     </div>

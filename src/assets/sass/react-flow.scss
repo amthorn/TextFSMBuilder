@@ -1,13 +1,136 @@
+@import "imports";
+
 .react-flow__node {
-    font-family: monospace;
-    text-transform: uppercase;
-    font-weight: bold;
+    @extend .text-center;
+    @extend .rounded;
+    @extend .border-dark;
+    @extend .border-1;
+    @extend .w-30;
+    @extend .bs-solid;
+    @extend .p-2;
+    @extend .h-auto;
+
+    @include font-monospace;
+
+    &.react-flow__node-start {
+    	@extend .bg-warning;
+    }
+    &.react-flow__node-state {
+    	@extend .bg-success;
+    }
 }
-.react-flow__node-default, .react-flow__node-input, .react-flow__node-output {
-    width: 160px;
-    height: 40px;
-}
+
 .react-flow__background {
-    top: -10px;
-    left: -10px;
+    top: 1.25%;
+    left: 1.75%;
+}
+
+div {
+	&.react-flow__node--active {
+		@extend .blink-border;
+		@extend .border-1;
+		@extend .bs-dashed;
+	}
+}
+rect {
+	&.react-flow__node--active {
+		@extend .blink-bg;
+	}
+}
+
+.active-rule {
+	@include arrow('right');
+	&::after {
+		left: -20px;
+		top: 0px;
+		@extend .blink-content;
+	}
+}
+
+.react-flow__edge-path {
+	@extend .sw-1-5;
+}
+
+.react-flow__node.selected {
+	box-shadow: 2px 2px 8px gray;
+}
+
+.blink-border {
+  	animation: blink-border-kf 1s ease-in-out infinite;
+}
+
+.blink-bg {
+	animation: blink-fill-kf 1s ease-in-out infinite;
+}
+
+.blink-content {
+	animation: blink-content-kf 1s ease-in-out infinite;
+}
+
+@keyframes blink-border-kf {
+	50% {
+		border-color: rgba(255, 255, 255, 0);
+		// this could be configurable in the future
+		// border-color: rgba(255, 255, 255, 1);
+	}
+}
+
+@keyframes blink-fill-kf {
+	50% {
+		fill: rgba(220, 53, 69, .4);
+		// this could be configurable in the future
+		// background-color: rgba(255, 255, 255, 1);
+	}
+}
+
+@keyframes blink-content-kf {
+	50% {
+		color: rgba(0, 0, 0, .3);
+		// this could be configurable in the future
+		// background-color: rgba(255, 255, 255, 1);
+	}
+}
+
+
+.react-flow__handle.connectable {
+	/* sizes must be absolute because parent container changes height */
+	width: 13px;
+	height: 12px;
+
+	@each $position, $types in $handles {
+		@each $type, $arrow-direction in $types {
+			&.#{$type}[data-handlepos="#{$position}"] {
+				@include arrow($arrow-direction);
+				@if $type == source {
+					@extend .bg-warning;
+				} @else if $type == target {
+					@extend .bg-danger;
+				}
+			}
+		}
+	}
+}
+
+@each $position, $_ in $handles {
+	.react-flow__handle-#{$position} {
+		@if $position == top or $position == bottom {
+			left: 50%;
+		}@else if $position == left {
+			left: -7px;
+		}@else if $position == right {
+			right: -7px;
+		}
+
+		@if $position == left or $position == right {
+			top: 50%;
+		}@else if $position == top {
+			top: -7px;
+		}@else if $position == bottom {
+			bottom: -7px;
+		}
+	}
+}
+
+.react-flow__node-accordion {
+	text-transform: none;
 }
